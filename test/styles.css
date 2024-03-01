@@ -1,0 +1,36 @@
+/* style.css */
+
+/* Стилі для кнопки */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Стилі для вікна з відео */
+#video-modal {
+    display: none; /* Початково ховаємо вікно з відео */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Анімація для відкривання вікна */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Застосовуємо анімацію до вікна */
+#video-modal.show {
+    animation: fadeIn 0.3s ease forwards;
+}
